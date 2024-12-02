@@ -33,7 +33,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/favicon/favicon.ico') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/natusi.png') }}" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -79,7 +79,7 @@
               <div class="app-brand justify-content-center">
                 <a href="{{ route('dashboard') }}" class="app-brand-link">
                     <span class="app-brand-logo demo">
-                        <img src="{{ asset('assets/img/favicon/favicon.ico') }}" alt="logo" height="50px">
+                        <img src="{{ asset('images/natusi.png') }}" alt="logo" height="50px">
                     </span>
                     <span class="demo menu-text fw-bolder ms-2" style="font-size: 17px">{{ env('APP_NAME') }}</span>
                     {{-- <span class="app-brand-text demo menu-text fw-bolder ms-2">{{ env('APP_NAME') }}</span> --}}
@@ -89,7 +89,7 @@
               <h4 class="mb-2">Selamat Datang</h4>
               <p class="mb-4">Silahkan Login Terlebih dahulu</p>
               @if (session()->has('loginError'))
-                <div class="alert alert-danger" role="alert">{{ session('loginError') }}</div>  
+                <div class="alert alert-danger" role="alert">{{ session('loginError') }}</div>
               @endif
 
               <form id="formAuthentication" class="mb-3" action="{{ route('authenticate') }}" method="POST">

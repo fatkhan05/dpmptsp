@@ -60,18 +60,18 @@
                             <div data-i18n="Boxicons">Penjadwalan Shift</div>
                         </a>
                     </li>
-                    <li class="menu-item {{ $segment1 == 'kategori_pegawai' ? 'active' : '' }}">
+                    {{-- <li class="menu-item {{ $segment1 == 'kategori_pegawai' ? 'active' : '' }}">
                         <a href="{{ route('kategori_pegawai') }}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-category"></i>
                             <div data-i18n="Boxicons">Kategori Pegawai</div>
                         </a>
-                    </li>
-                    <li class="menu-item {{ $segment1 == 'bidang' ? 'active' : '' }}">
+                    </li> --}}
+                    {{-- <li class="menu-item {{ $segment1 == 'bidang' ? 'active' : '' }}">
                         <a href="{{ route('bidang') }}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-category"></i>
                             <div data-i18n="Boxicons">Kategori Bidang</div>
                         </a>
-                    </li>
+                    </li> --}}
                     <li class="menu-item {{ $segment1 == 'shift' ? 'active' : '' }}">
                         <a href="{{ route('shift') }}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-calendar-check"></i>
@@ -90,7 +90,7 @@
                             <div data-i18n="Boxicons">Pekerjaan Pegawai</div>
                         </a>
                     </li>
-                    <li class="menu-item {{ $segment1 == 'point_target' ? 'active' : '' }}">
+                    {{-- <li class="menu-item {{ $segment1 == 'point_target' ? 'active' : '' }}">
                         <a href="{{ route('point_target') }}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-target-lock"></i>
                             <div data-i18n="Boxicons">Point Target</div>
@@ -107,13 +107,13 @@
                             <i class="menu-icon tf-icons bx bx-map"></i>
                             <div data-i18n="Boxicons">Lokasi Kantor</div>
                         </a>
-                    </li>
+                    </li> --}}
                 </ul>
             </li>
         @endif
 
 
-        <li
+        {{-- <li
             class="menu-item {{ $segment1 == 'presensi' || $segment1 == 'penilaian_kerja' || ($segment1 == 'perizinan' && $segment2 == 'riwayat') ? 'active open' : '' }}">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-user-check"></i>
@@ -140,15 +140,14 @@
                     </a>
                 </li>
             </ul>
-        </li>
-        @if (Auth::user()->level == 1)
+        </li> --}}
+        {{-- @if (Auth::user()->level == 1)
             <li
                 class="menu-item {{ $segment1 == 'kategori_izin' || ($segment1 == 'perizinan' && $segment2 != 'riwayat') ? 'active open' : '' }}">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bx-file"></i>
                     <div data-i18n="Perizinan">Perizinan</div>
                 </a>
-
                 <ul class="menu-sub">
                     <li class="menu-item {{ $segment1 == 'kategori_izin' ? 'active' : '' }}">
                         <a href="{{ route('kategori_izin') }}" class="menu-link">
@@ -164,7 +163,7 @@
                     </li>
                 </ul>
             </li>
-        @endif
+        @endif --}}
 
 
         {{-- <li class="menu-header small text-uppercase">
